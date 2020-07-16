@@ -1,4 +1,4 @@
-const { DiscordAPIError } = require("discord.js");
+const { discord } = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
@@ -6,6 +6,9 @@ module.exports.run = async (bot, message, args) => {
 
     const noArgs = new Discord.MessageEmbed()
         .setDescription("**!search**\nExamples:\n!search food")
+        .setFooter("!invite - !github")
+        .setTimestamp()
+
 
     if (!args[0]) return message.channel.send(noArgs)
 
@@ -22,7 +25,7 @@ module.exports.run = async (bot, message, args) => {
         .setTitle("Your URL has been created!")
         .setURL(link)
         .setColor('#0099ff')
-        .setFooter("!invite - !github")
+        .setFooter("!help | !github | !invite")
         .setTimestamp()
 
 
