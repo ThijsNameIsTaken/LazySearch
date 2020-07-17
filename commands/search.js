@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args) => {
 
         const linkembed = new Discord.MessageEmbed()
         .setColor('#0099ff')
-        .setTitle("Your URL has been created!")
+        .setTitle("Too lazy to search something? Just click here")
         .setURL(link)
         .setColor('#0099ff')
         .setFooter("!help | !github | !invite")
