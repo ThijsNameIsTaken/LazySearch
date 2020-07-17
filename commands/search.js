@@ -18,7 +18,7 @@ module.exports.run = async (bot, message, args) => {
         var messageArray = message.content.split(" ");
 
         const arguments = args.join('+')
-        const link = `https://www.google.com/search?sxsrf=ALeKk02SZoPJJV2wOMpLOG3KtY-UyAjnqw%3A1594910613412&ei=lWcQX9vJGJGVsAfar5ioCA&q=${arguments}`
+        const link = `https://www.google.com/search?q=${arguments}`
 
         const linkembed = new Discord.MessageEmbed()
         .setColor('#0099ff')
